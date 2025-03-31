@@ -1,3 +1,15 @@
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-gray-900: hsl(0deg, 0%, 10%);
+  --color-gray-700: hsl(0deg, 0%, 30%);
+  --color-gray-600: hsl(0deg, 0%, 40%);
+  --color-gray-400: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -5,8 +17,79 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Add styles here! */
+header {
+  padding: 96px 24px 64px;
+  border-bottom: 8px solid var(--color-gray-400);
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 264px;
+  }
+}
+
+.intro-chunk {
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+  }
+}
+
+section {
+  padding: 72px 0;
+  background-color: var(--color-gray-600);
+
+  @media screen and (min-width: 1280px) {
+    padding: 72px 240px;
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.card {
+  padding-top: 8px;
+  background-color: white;
+  border-bottom: 8px solid var(--color-gray-400);
+}
+
+p {
+  font-size: 1.25rem;
+  margin: 0;
+  line-height: 150%;
+}
+
+.paragraph-margin {
+  margin-bottom: 16px;
+}
+
+.indented-heading {
+  width: fit-content;
+  margin: 0;
+  margin-right: 24px;
+  padding: 12px 24px;
+  background-color: var(--color-secondary-light);
+  border-bottom: 8px solid var(--color-secondary-dark);
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -8px;
+    padding-left: 32px;
+  }
+}
+
+.content {
+  margin: 30px 0;
+  padding: 0 24px;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
